@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterationVC" customModule="classRegister" customModuleProvider="target">
+            <connections>
+                <outlet property="addBtn" destination="2jS-3N-6aX" id="XhL-h4-6nt"/>
+                <outlet property="addressTF" destination="ymC-Um-iAB" id="cMv-UN-df6"/>
+                <outlet property="birthdayPicker" destination="zyN-L5-umS" id="j16-6s-RaY"/>
+                <outlet property="clearBtn" destination="zt8-mu-MN9" id="zqp-T6-AFD"/>
+                <outlet property="emailTF" destination="J15-uj-d0P" id="nYC-at-8Dz"/>
+                <outlet property="genderPicker" destination="r6f-Nf-ZQZ" id="O9F-dr-kkx"/>
+                <outlet property="lastNameTF" destination="AHH-EL-C7N" id="LT6-Ez-ALj"/>
+                <outlet property="nameTF" destination="g6c-40-SnE" id="D9G-eL-J3s"/>
+                <outlet property="phoneTF" destination="ccD-hG-LYn" id="WXz-jg-ZeU"/>
+                <outlet property="showBtn" destination="6pR-09-HKx" id="tdY-k1-cOU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalHuggingPriority="500" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-cv-bXN">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1D-UF-p1S">
+                            <rect key="frame" x="8" y="-9" width="414" height="900"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MZE-a9-gkH">
+                                    <rect key="frame" x="47" y="50" width="320" height="511.5"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g6c-40-SnE">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHH-EL-C7N">
+                                            <rect key="frame" x="0.0" y="64" width="320" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your phone number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccD-hG-LYn">
+                                            <rect key="frame" x="0.0" y="128" width="320" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ymC-Um-iAB">
+                                            <rect key="frame" x="0.0" y="192" width="320" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J15-uj-d0P">
+                                            <rect key="frame" x="0.0" y="256" width="320" height="34"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                        </textField>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="glx-IG-fe6">
+                                            <rect key="frame" x="0.0" y="320" width="320" height="130.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your birthday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qst-Mc-UQb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="206" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="zyN-L5-umS">
+                                                    <rect key="frame" x="0.0" y="25.5" width="320" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="i20-gI-01D"/>
+                                                    </constraints>
+                                                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                                        <!--1970-01-01 11:00:00 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                                <pickerView contentMode="scaleAspectFit" horizontalHuggingPriority="1" verticalHuggingPriority="1" verticalCompressionResistancePriority="251" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6f-Nf-ZQZ">
+                                                    <rect key="frame" x="0.0" y="80.5" width="320" height="50"/>
+                                                    <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="GmW-ZL-6ol"/>
+                                                    </constraints>
+                                                </pickerView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-wL-97s">
+                                            <rect key="frame" x="0.0" y="480.5" width="320" height="31"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jS-3N-6aX">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="31"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="add">
+                                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="manageStudents:" destination="-1" eventType="touchUpInside" id="XBd-mM-QwH"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pR-09-HKx">
+                                                    <rect key="frame" x="110" y="0.0" width="100" height="31"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Show">
+                                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="manageStudents:" destination="-1" eventType="touchUpInside" id="au1-Nv-Qwb"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zt8-mu-MN9">
+                                                    <rect key="frame" x="220" y="0.0" width="100" height="31"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Clear">
+                                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="manageStudents:" destination="-1" eventType="touchUpInside" id="ZA4-Vh-NAf"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="AccentColor"/>
+                            <constraints>
+                                <constraint firstItem="MZE-a9-gkH" firstAttribute="height" secondItem="p1D-UF-p1S" secondAttribute="height" multiplier="0.568333" id="CcS-z1-N6T"/>
+                                <constraint firstItem="MZE-a9-gkH" firstAttribute="top" secondItem="p1D-UF-p1S" secondAttribute="top" constant="50" id="ebd-IJ-J8v"/>
+                                <constraint firstItem="MZE-a9-gkH" firstAttribute="width" secondItem="p1D-UF-p1S" secondAttribute="width" multiplier="0.772947" id="yio-Vi-0nL"/>
+                                <constraint firstItem="MZE-a9-gkH" firstAttribute="centerX" secondItem="p1D-UF-p1S" secondAttribute="centerX" id="yya-nA-3eF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="p1D-UF-p1S" firstAttribute="top" secondItem="VfG-cv-bXN" secondAttribute="top" constant="-9" id="71y-ea-tJQ"/>
+                        <constraint firstAttribute="trailing" secondItem="p1D-UF-p1S" secondAttribute="trailing" constant="-8" id="G8F-zf-K0A"/>
+                        <constraint firstItem="p1D-UF-p1S" firstAttribute="leading" secondItem="VfG-cv-bXN" secondAttribute="leading" constant="8" id="PW5-D7-lZq"/>
+                        <constraint firstItem="p1D-UF-p1S" firstAttribute="width" secondItem="VfG-cv-bXN" secondAttribute="width" id="aok-Jh-aqy"/>
+                        <constraint firstItem="p1D-UF-p1S" firstAttribute="height" secondItem="VfG-cv-bXN" secondAttribute="height" priority="250" constant="82" id="tm7-Fa-nYv"/>
+                        <constraint firstAttribute="bottom" secondItem="p1D-UF-p1S" secondAttribute="bottom" constant="-73" id="xYV-cD-vgi"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="TVY-Zi-mUC"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="El7-0F-vHa"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="AccentColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VfG-cv-bXN" secondAttribute="trailing" id="5Ps-mv-MFM"/>
+                <constraint firstItem="VfG-cv-bXN" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="KO2-44-s6P"/>
+                <constraint firstItem="VfG-cv-bXN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="j0d-4s-HKP"/>
+                <constraint firstItem="VfG-cv-bXN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jRW-Xn-WbH"/>
+            </constraints>
+            <point key="canvasLocation" x="-436.23188405797106" y="47.544642857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
